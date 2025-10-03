@@ -261,7 +261,7 @@ body, html {
   border-radius: 50%;
   transform: translateX(-50%);
 }
-.end-circle {
+/* .end-circle {
   position: absolute;
   bottom: -120px;
   left: 50%;
@@ -270,7 +270,7 @@ body, html {
   background: #c4a484;
   border-radius: 50%;
   transform: translateX(-50%);
-}
+} */
 .event {
   position: relative;
   width: 45%;
