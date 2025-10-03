@@ -397,6 +397,7 @@ body, html {
   text-align: center;
   cursor: pointer;
   animation: bounce 1.5s infinite;
+  background: #f7eee7;
 }
 
 .envelope img {
