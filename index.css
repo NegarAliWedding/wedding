@@ -222,7 +222,7 @@ body, html {
   bottom: 0px;
   left: 50%;
   width: 2px;
-  height: 130vh;
+  height: 120vh;
   background: #c4a484; /* کرم موکا */
   transform: translateX(-50%);
 }
@@ -344,4 +344,18 @@ body, html {
 #play-btn:hover {
   transform: scale(1.1);
   background: rgba(196, 164, 132, 1);
+}
+
+.event-1 p ,
+.event-1 span{
+  font-family: "Nastaliq";
+  color:rgba(196, 164, 132, 0.9); ;
+}
+
+.event-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
 }
