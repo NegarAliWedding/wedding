@@ -45,7 +45,8 @@ body, html {
   position: absolute;
   inset: 0;
   height: 100%;
-  background: url('https://raw.githubusercontent.com/NegarAliWedding/wedding/main/IMG_0694%20(1).jpeg') top center/cover no-repeat;
+  
+  background: url('https://raw.githubusercontent.com/NegarAliWedding/wedding/main/photo_1404-07-07%2018.02.24.png') top center/cover no-repeat;
   z-index: 1;
   border-radius: 20px;
   }
