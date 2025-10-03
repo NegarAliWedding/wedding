@@ -377,3 +377,41 @@ body, html {
 }
 
 
+.envelope-screen {
+  position: fixed;
+  inset: 0;
+  background: #faf8f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10000;
+  transition: opacity 1s ease;
+}
+
+.envelope-screen.fade-out {
+  opacity: 0;
+}
+
+.envelope {
+  text-align: center;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+}
+
+.envelope img {
+  font-size: 80px;
+  color: rgba(196, 164, 132, 0.9); /* رنگ طلایی */
+}
+
+.envelope p {
+  font-family: "Nastaliq", serif;
+  font-size: 20px;
+  color: #444;
+  margin-top: 15px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

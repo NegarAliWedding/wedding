@@ -10,9 +10,15 @@
 </head>
 
 <body>
-
-  
-  <div class="card">
+  <div id="envelope-screen" class="envelope-screen">
+    <div class="envelope">
+      <img url="https://raw.githubusercontent.com/NegarAliWedding/wedding/main/IMG_0712.jpeg" alt="">
+      <!-- <i class="fa-solid fa-envelope"></i> -->
+      <p>برای باز کردن دعوتنامه کلیک کنید</p>
+    </div>
+  </div>
+  <div class="main-contant">
+      <div class="card">
 
     <div class="top">
       <div class="background"></div>
@@ -100,24 +106,22 @@
     
     <!-- <div class="end-circle"></div> -->
   </div>
-  <!-- <div class="event-1">
-    <p>نصیری٬علیمحمدی</p>
-    <span>میزبان حضور گرمتان هستیم</span>
-    
-  </div> -->
+  </div>
+
 
   <!-- موزیک پس‌زمینه -->
+
 <audio id="bg-music" loop>
   
   <source src="https://raw.githubusercontent.com/NegarAliWedding/wedding/main/Untitled_(Converted)_out.mp3" type="audio/mpeg">
 </audio>
 
 <!-- دکمه شناور پخش موزیک -->
-<button id="play-btn">
+<!-- <button id="play-btn">
   <i class="fa-solid fa-music"></i>
-</button>
+</button> -->
 
-<script>
+<!-- <script>
   const btn = document.getElementById("play-btn");
   const music = document.getElementById("bg-music");
   let playing = false;
@@ -131,6 +135,37 @@
       btn.innerHTML = '<i class="fa-solid fa-music"></i>'; // آیکون موزیک
     }
     playing = !playing;
+  });
+</script> -->
+<!-- <script>
+  const envelopeScreen = document.getElementById("envelope-screen");
+  const mainCard = document.getElementById("main-card");
+
+  envelopeScreen.addEventListener("click", () => {
+    envelopeScreen.classList.add("fade-out"); // اجرای انیمیشن محو شدن
+    setTimeout(() => {
+      envelopeScreen.style.display = "none";
+      mainCard.style.display = "block";
+    }, 1000); // بعد از ۱ ثانیه (زمان انیمیشن) محتوای اصلی نشون بده
+  });
+</script> -->
+<script>
+  const envelopeScreen = document.getElementById("envelope-screen");
+  const mainCard = document.querySelector(".main-contant"); // اینو اصلاح کردم چون آیدی نداشت
+  const music = document.getElementById("bg-music");
+  const btn = document.getElementById("play-btn");
+
+  envelopeScreen.addEventListener("click", () => {
+    envelopeScreen.classList.add("fade-out");
+
+    setTimeout(() => {
+      envelopeScreen.style.display = "none";
+      mainCard.style.display = "block";
+
+      // 🎵 موزیک شروع میشه
+      music.play();
+      btn.innerHTML = '<i class="fa-solid fa-pause"></i>'; // آیکون دکمه رو هم تغییر بده
+    }, 1000);
   });
 </script>
 
