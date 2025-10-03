@@ -349,7 +349,7 @@ body, html {
 .event-1 {
   width: 100%;
   text-align: center;
-  margin: 100px auto 40px auto; /* فاصله خوب از تایم‌لاین */
+  margin: 80px auto 40px auto; /* فاصله از تایم‌لاین */
   padding: 20px;
   font-family: "Nastaliq", serif;
   font-size: 20px;
@@ -357,12 +357,14 @@ body, html {
 
   display: flex;
   flex-direction: column;
-  align-items: center;   /* وسط افقی */
+  align-items: center;
   justify-content: center;
 
-  position: relative;
-  clear: both; /* خیلی مهم: باعث میشه از زیر left/right جدا بشه */
+  clear: both;   /* خیلی مهم: بیاد زیر همه‌ی event ها */
+  border-top: 1px solid rgba(196, 164, 132, 0.5); /* خط طلایی */
 }
+
+
 
 .event-1 p,
 .event-1 span {
