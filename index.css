@@ -349,23 +349,27 @@ body, html {
 .event-1 {
   width: 100%;
   text-align: center;
-  margin: 80px auto 40px auto; /* فاصله بالای بیشتر از تایم‌لاین */
+  margin: 100px auto 40px auto; /* فاصله خوب از تایم‌لاین */
   padding: 20px;
   font-family: "Nastaliq", serif;
   font-size: 20px;
   color: rgba(196, 164, 132, 0.9);
+
   display: flex;
   flex-direction: column;
   align-items: center;   /* وسط افقی */
-  justify-content: center; /* وسط عمودی */
-  clear: both; /* خیلی مهم: این باعث میشه از چپ/راست تایم‌لاین جدا بشه */
+  justify-content: center;
+
+  position: relative;
+  clear: both; /* خیلی مهم: باعث میشه از زیر left/right جدا بشه */
 }
+
 .event-1 p,
 .event-1 span {
   font-family: "Nastaliq";
   display: block;
   font-size: 18px;
-  margin-top: 50px;
+  margin-top: 8px;
 }
 
 
