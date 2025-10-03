@@ -363,7 +363,7 @@ body, html {
   font-size: 15px;
 
   /* clear: both;   خیلی مهم: بیاد زیر همه‌ی event ها */
-  border-top: 1px solid rgba(196, 164, 132, 0.5);  
+  /* border-top: 1px solid rgba(196, 164, 132, 0.5);   */
 }
 
 
@@ -402,6 +402,8 @@ body, html {
 .envelope img {
   font-size: 80px;
   color: rgba(196, 164, 132, 0.9); /* رنگ طلایی */
+  width: 70%;
+  height: 100%;
 }
 
 .envelope p {
