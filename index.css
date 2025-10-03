@@ -363,7 +363,7 @@ body, html {
   font-size: 15px;
 
   /* clear: both;   خیلی مهم: بیاد زیر همه‌ی event ها */
-  /* border-top: 1px solid rgba(196, 164, 132, 0.5); خط طلایی */
+  border-top: 1px solid rgba(196, 164, 132, 0.5);  
 }
 
 
