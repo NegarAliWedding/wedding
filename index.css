@@ -398,13 +398,16 @@ body, html {
   cursor: pointer;
   animation: bounce 1.5s infinite;
   background: #f7eee7;
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 
 .envelope img {
   font-size: 80px;
   color: rgba(196, 164, 132, 0.9); /* رنگ طلایی */
-  width: 70%;
-  height: 100%;
+  width: 350px;
+  height: 80%;
 }
 
 .envelope p {
